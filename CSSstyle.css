@@ -1,12 +1,6 @@
 /* 1. FONT: Poppins z Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* 2. RESET TESTÓW – koniecznie usuń stare outline'y, jeśli jeszcze są */
-/* jeśli masz w pliku coś typu:
-   * { outline: 2px solid red !important; }
-   to usuń lub zakomentuj
-*/
-
 /* 3. GLOBALNE USTAWIENIA STRONY */
 html, body {
   font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
