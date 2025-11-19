@@ -8,15 +8,6 @@ html, body {
   color: #111111;
 }
 
-/* 4. NAGŁÓWEK / GÓRNY PANEL */
-header,
-.header,
-.top-bar,
-.navbar {
-  background-color: #ffffff !important;
-  border-bottom: 1px solid #e5e5e5;
-}
-
 /* 5. PRZYCISKI – główne CTA (pełne, żółte) */
 button,
 .btn,
