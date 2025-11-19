@@ -1,3 +1,16 @@
+/* TEST – sprawdzenie czy CSS się ładuje */
 body {
-  background: #ffc107 !important;
+  background-color: #ffc107 !important;
+}
+
+/* czerwone ramki na wszystkim, tylko testowo */
+* {
+  outline: 2px solid red !important;
+}
+
+/* powiększone przyciski i linki – żeby było widać */
+button,
+a {
+  font-size: 24px !important;
+  padding: 20px !important;
 }
