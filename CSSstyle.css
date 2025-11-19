@@ -124,3 +124,32 @@ section,
 .container {
   border-radius: 16px;
 }
+/* USUWANIE ŻÓŁTYCH KROPEK / DEKORACI • */
+.dot,
+.dot:before,
+.dot:after,
+button .circle,
+.circle,
+.bullet,
+.bullet-icon,
+[class*="dot"],
+[class*="bullet"],
+[class*="circle"] {
+    display: none !important;
+    background: none !important;
+    box-shadow: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+/* Usunięcie pseudo-elementów przed tekstem np. w kategoriach */
+nav li::before,
+.nav li::before,
+[data-testid="category"]::before,
+[data-testid*="tab"]::before,
+button::before,
+a::before {
+    content: none !important;
+    display: none !important;
+}
