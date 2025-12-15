@@ -1,19 +1,38 @@
-/* Styl kółka z ikoną plusa */
+/* Kółko + bez rozmyć */
 .rounded-icon {
-    background-color: #ffffff !important;  /* białe tło */
-    border: 2px solid #000000 !important;  /* czarne obramowanie */
-    border-radius: 50% !important;         /* okrąg */
-    color: #000000 !important;             /* czarny plus */
-    width: 40px !important;                /* możesz zmienić */
-    height: 40px !important;               /* możesz zmienić */
+    background-color: #ffffff !important;
+    border: 2px solid #000000 !important;
+    border-radius: 50% !important;
+
+    width: 40px !important;
+    height: 40px !important;
+
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    font-size: 22px !important;            /* wielkość znaku + */
+
+    color: #000000 !important;
+    font-size: 22px !important;
+
+    /* ANTY-ROZMYCIE */
+    transform: none !important;
+    backface-visibility: hidden !important;
+    shape-rendering: crispEdges !important;
+    image-rendering: pixelated !important;
+    will-change: auto !important;
+    -webkit-font-smoothing: antialiased !important;
 }
 
-/* Usunięcie dodatkowego tła w wrapperze */
-.card-img .rounded-icon {
-    background-color: #ffffff !important;
-    border: 2px solid #000000 !important;
+/* Nadpisanie wrappera GoOrder (najważniejsze!) */
+.ellipse {
+    transform: none !important;
+    backface-visibility: hidden !important;
+    opacity: 1 !important;
+    border-radius: 50% !important;
+}
+
+/* Dodatkowe ustabilizowanie renderingu */
+.card-img .rounded-icon,
+.menu-item .rounded-icon {
+    transform: none !important;
 }
