@@ -1,1 +1,19 @@
+/* Styl kółka z ikoną plusa */
+.rounded-icon {
+    background-color: #ffffff !important;  /* białe tło */
+    border: 2px solid #000000 !important;  /* czarne obramowanie */
+    border-radius: 50% !important;         /* okrąg */
+    color: #000000 !important;             /* czarny plus */
+    width: 40px !important;                /* możesz zmienić */
+    height: 40px !important;               /* możesz zmienić */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 22px !important;            /* wielkość znaku + */
+}
 
+/* Usunięcie dodatkowego tła w wrapperze */
+.card-img .rounded-icon {
+    background-color: #ffffff !important;
+    border: 2px solid #000000 !important;
+}
